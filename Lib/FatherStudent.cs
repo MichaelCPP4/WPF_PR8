@@ -13,7 +13,7 @@ namespace Lib
 
         public int NumChild
         {
-            get { return _numChild; }
+            get =>_numChild;
             set
             {
                 if (value > 0)
@@ -40,16 +40,15 @@ namespace Lib
         /// </summary>
         /// <param name="fio">ФИО</param>
         /// <param name="age">Возраст</param>
+        /// <param name="kurs">Курс</param>
         public FatherStudent(string[] fio, int age, int kurs) : base(fio, age, kurs)
         {
             _numChild = 1;
-            //Fio = fio;
         }
 
         public FatherStudent(string[] fio, int age, int kurs, int numChild) : base(fio, age, kurs)
         {
             _numChild = numChild;
-            //Fio = fio;
         }
 
         /// <summary>
@@ -69,6 +68,7 @@ namespace Lib
         /// </summary>
         /// <param name="fio">ФИО</param>
         /// <param name="age">Возраст</param>
+        /// <param name="kurs">Курс</param>
         /// <param name="numChild">Кол-во детей у отца</param>
         public void SetInformation(string[] fio, int age, int kurs, int numChild)
         {
@@ -82,11 +82,7 @@ namespace Lib
         /// Переопределённый метод ля представления объекта класса в listBox
         /// </summary>
         /// <returns>Возвращает ФИО студента-отца семейства</returns>
-        public override string ToString()
-        {
-            //return "Студент - " + this.Name;
-            return "Студент-отец - " + $"{this.Fio[0]} {this.Fio[1]} {this.Fio[2]}";
-        }
+        public override string ToString() => "Студент-отец - " + $"{this.Fio[0]} {this.Fio[1]} {this.Fio[2]}";
 
         /// <summary>
         /// Полное клонирование
@@ -103,9 +99,10 @@ namespace Lib
             return fatherStudent;
         }
 
-        override public string Info()
-        {
-            return $"ФИО: {Fio[0]} {Fio[1]} {Fio[2]} \nВозраст: {Age} \nКол-во детей: {NumChild} \nУчится на {Kurs} курсе";
-        }
+        /// <summary>
+        /// Информация о студенте-отце
+        /// </summary>
+        /// <returns>Возаращает строку</returns>
+        override public string Info() => $"ФИО: {Fio[0]} {Fio[1]} {Fio[2]} \nВозраст: {Age} \nКол-во детей: {NumChild} \nУчится на {Kurs} курсе";
     }
 }

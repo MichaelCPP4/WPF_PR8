@@ -23,7 +23,7 @@
                     <Label Content="ФИО:" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="104" FontSize="18" Height="34"/>
                     <TextBox x:Name="textBoxAgeStudent" HorizontalAlignment="Left" Margin="10,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Height="30" FontSize="18"/>
                     <Label Content="Возраст:" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="104" FontSize="18" Height="34"/>
-                    <Button x:Name="buttonCreateStudent" Content="Создать" HorizontalAlignment="Left" Margin="338,48,0,0" VerticalAlignment="Top" Width="120" Height="30" FontSize="18" Click="ButtonCreateStudent_Click" KeyDown="ButtonCreateStudent_KeyDown" IsDefault="True"/>
+                    <Button x:Name="buttonCreateStudent" Content="Создать" HorizontalAlignment="Left" Margin="338,48,0,0" VerticalAlignment="Top" Width="120" Height="30" FontSize="18" Click="ButtonCreateStudent_Click" IsDefault="True"/>
                     <TextBox x:Name="textBoxKursStudent" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Height="30" FontSize="18" Margin="10,181,0,0"/>
                     <Label Content="Курс:" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="104" FontSize="18"/>
                 </Grid>
@@ -49,7 +49,7 @@
         <Button x:Name="buttonClon" Content="Клонировать" HorizontalAlignment="Left" Margin="351,171,0,0" VerticalAlignment="Top" Height="30" Width="120" FontSize="18" Click="ButtonClon_Click"/>
         <Label Content="Студенты:" HorizontalAlignment="Left" Margin="488,20,0,0" VerticalAlignment="Top" Width="103" FontSize="18" Height="33" FontWeight="Bold"/>
         <TextBox x:Name="infoHuman" Margin="850,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="296" FontSize="18" IsReadOnly="True" HorizontalAlignment="Left" Width="311"/>
-        <Label Content="Информация:" HorizontalAlignment="Left" Margin="850,20,0,0" VerticalAlignment="Top" Width="135" FontSize="18" Height="33" FontWeight="Bold"/>
+        <Label Content="Информация о студенте:" HorizontalAlignment="Left" Margin="850,20,0,0" VerticalAlignment="Top" Width="240" FontSize="18" Height="33" FontWeight="Bold"/>
         <Button x:Name="buttonVivod" Content="Вывести" HorizontalAlignment="Left" Margin="351,236,0,0" VerticalAlignment="Top" Height="30" Width="120" FontSize="18" Click="ButtonVivod_Click"/>
         <GroupBox Header="Сравнение фамилий" Margin="9,349,0,0" FontSize="18" FontWeight="Bold" Height="175" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1152">
             <Grid>

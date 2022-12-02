@@ -9,7 +9,6 @@ namespace WPF_PR7
     internal interface IHuman
     {
         string[] Fio { get; set; }
-        //string Name { get; set; }
         int Age { get; set; }
 
         int Kurs { get; set; }

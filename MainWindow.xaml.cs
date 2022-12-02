@@ -90,14 +90,12 @@ namespace WPF_PR7
             if (listBox.SelectedItem.GetType() == typeof(Student))
             {
                 Student student = listBox.SelectedItem as Student;
-                //infoHuman.Text = $"ФИО: {student.Fio[0]} {student.Fio[1]} {student.Fio[2]} \n Возраст: {student.Age}";
                 infoHuman.Text = student.Info();
             }
             else
             {
                 FatherStudent fatherStudent = listBox.SelectedItem as FatherStudent;
                 infoHuman.Text = fatherStudent.Info();
-                //infoHuman.Text = $"ФИО: {fatherStudent.Fio[0]} {fatherStudent.Fio[1]} {fatherStudent.Fio[2]} \nВозраст: {fatherStudent.Age} \nКол-во детей: {fatherStudent.NumChild}";
             }
         }
 
@@ -168,15 +166,6 @@ namespace WPF_PR7
         private void MenuItemInfo_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Создать интерфейс - человек. Создать классы – студент и студент-отец семейства.\r\nКлассы должны включать конструкторы, функцию для формирования строки\r\nинформации о студенте. Сравнение производить по фамилии.\nРеализовал Иванов Михаил ИСП-31", "О программе");
-        }
-
-        private void ButtonCreateStudent_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                Button button = sender as Button;
-
-            }
         }
     }
 }
