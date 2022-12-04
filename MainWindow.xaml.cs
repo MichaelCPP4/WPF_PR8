@@ -167,5 +167,21 @@ namespace WPF_PR7
         {
             MessageBox.Show("Создать интерфейс - человек. Создать классы – студент и студент-отец семейства.\r\nКлассы должны включать конструкторы, функцию для формирования строки\r\nинформации о студенте. Сравнение производить по фамилии.\nРеализовал Иванов Михаил ИСП-31", "О программе");
         }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            listBox.Items.Remove(listBox.SelectedItem);
+        }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            textBoxNameStudent.Clear();
+            textBoxNameFatherStudent.Clear();
+            textBoxAgeStudent.Clear();
+            textBoxAgeFatherStudent.Clear();
+            textBoxKursStudent.Clear();
+            textBoxKursFatherStudent.Clear();
+            textBoxNumChieldFatherStudent.Clear();
+        }
     }
 }

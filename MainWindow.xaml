@@ -13,7 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TabControl Margin="9,30,0,0" Height="319" VerticalAlignment="Top" HorizontalAlignment="Left" Width="474">
+        <TabControl Margin="9,30,0,0" Height="319" VerticalAlignment="Top" HorizontalAlignment="Left" Width="474" SelectionChanged="TabControl_SelectionChanged">
             <TabItem Header="Студент">
                 <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
@@ -69,6 +69,7 @@
         <Menu x:Name="menu" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left" Width="85">
             <MenuItem Header="О программе" Click="MenuItemInfo_Click"></MenuItem>
         </Menu>
+        <Button x:Name="buttonDelete_Click" Content="Удалить" HorizontalAlignment="Left" Margin="351,306,0,0" VerticalAlignment="Top" Height="30" Width="120" FontSize="18" Click="ButtonDelete_Click"/>
 
     </Grid>
 </Window>
